@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Prime Studio</title>
+
+    <!-- GOOGLE SHIV -->
+    <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>
+    <![endif]-->
+
+    <!-- VIEWPORT FOR MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font-awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <!-- google webfont -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,700,900|Merriweather:400,300,700italic' rel='stylesheet' type='text/css'>
+    <!-- animated css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- fullpage scrolling -->
+    <link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
+  
+        <!-- MAIN CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+    
+
+<body class="sub">
+
+    <header>
+        <div class="container_15">
+
+            <h1 id="logo"><a href="index.html">Prime Studio</a></h1>
+<div class="menu-collapsed">
+  <div class="bar"></div>
+            <nav id="mainnav">
+                <ul>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="work.html">work</a></li>
+                    <li><a href="news.html">news</a></li>
+                    <li class="selected"><a href="contact.html">contact</a></li>
+                    <li class="search">
+                    <span class="icon">
+                    <i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="" /></li>
+                </ul>
+            </nav>
+             </div>
+            <!--<div class="toggle-search">
+                    <span class="icon">
+                    <i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="" /></div>-->
+        </div>  <!-- container end --> 
+    </header>
+            
+    <div id="contact-section01" class="sub-section01">
+        <div class="fpage">
+            <div class="fcontainer">
+                <h1>contact</h1>
+            </div>
+        </div>
+
+    </div> <!-- end section1 -->
+
+    <div class="content">
+        
+        <article>
+     
+            <div id="contact-section02">
+            <div class="container_15">
+                 <div class="row group">
+                     <div class="grid_11 prefix_2 suffix_2">
+                <h2>keep in Touch With Us</h2>
+                <h3>We are an inviting, approachable studio. Please feel free to
+ reach out by phone or send us an email here and we’ll follow up within 24 hours.</h3>
+                <p>15 W. 39th St., Suite 1101 (between 8th and 9th Ave) New York, NY 10018</p>
+                <p>T: +1 212 239 2395      |     F: +1 212 239 4866     |     contact@primestudio.com</p>
+                     </div>
+                        <img src="images/map.jpg" class="scale-with-grid" alt="map"> 
+                </div> <!-- end of row -->
+                     
+                     <div class="row group">
+                        <div class="grid_9 prefix_3 suffix_3">
+                <h2>Recruitment</h2>
+                <h3>We’re always looking for incredible designers to join our team. 
+please use the below contact details.</h3>
+                <p>recruitment@prime.com</p>
+                            </div>
+              
+                         
+                         
+                </div>
+            </div> <!-- container end --> 
+            </div> <!-- end section1 -->
+
+        </article> <!-- end content -->
+    </div>
+               
+    <footer class="sub">
+        
+            <ul class="fa-ul group">
+              <li><a href="#"><i class="fa-li fa fa-facebook-square fa-2x"></i><span>Facebook</span></a></li>
+              <li><a href="#"><i class="fa-li fa fa-instagram fa-2x"></i><span>Instagram</span></a></li>
+              <li><a href="#"><i class="fa-li fa fa-twitter-square fa-2x"></i><span>Twitter</span></a></li>
+              <li><a href="#"><i class="fa-li fa fa-vimeo-square fa-2x"></i><span>Vimeo</span></a></li>
+            </ul>
+            <p>&copy; Prime Studio 2015 All Rights Reserved.</p>
+     
+    </footer>
+
+
+<!--
+<head>
+...
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe2ST7yoSDIBlr0r8Y0917Rm7dgHDASYU&sensor=false"></script>
+<script type="text/javascript" src="http://www.map-generator.org/map/iframejs/8119d1a6-959f-40d1-ba3a-518263cc9e07?key=AIzaSyAe2ST7yoSDIBlr0r8Y0917Rm7dgHDASYU&width=400px&height=400px"></script>
+...
+</head>
+    
+<body>
+...
+<div id ="mapid-8119d1a6-959f-40d1-ba3a-518263cc9e07"></div>
+<br />
+<a href="http://www.map-generator.org/8119d1a6-959f-40d1-ba3a-518263cc9e07/large-map.aspx">Enlarge Map</a>
+..
+</body>
+ js script-->
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+     // responsive menu
+    $(".menu-collapsed").click(function() {
+  $(this).toggleClass("menu-expanded");
+});
+
+    // SCROLLTOP 
+                
+        
+        $(window).scroll(function() {
+            
+            if( $(this).scrollTop() > 500 ) {
+                $('header').addClass('fixed');
+            } else {
+                $('header').removeClass('fixed');
+            }
+            
+        });
+    
+    });
+    </script>
+
+</body></html>

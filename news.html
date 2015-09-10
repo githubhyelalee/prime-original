@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Prime Studio</title>
+
+    <!-- GOOGLE SHIV -->
+    <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>
+    <![endif]-->
+
+    <!-- VIEWPORT FOR MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font-awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <!-- google webfont -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,700,900|Merriweather:400,300,700italic' rel='stylesheet' type='text/css'>
+    <!-- animated css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- fullpage scrolling -->
+    <link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
+  
+        <!-- MAIN CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+    
+
+<body class="sub">
+
+    <header>
+        <div class="container_15">
+
+            <h1 id="logo"><a href="index.html">Prime Studio</a></h1>
+<div class="menu-collapsed">
+  <div class="bar"></div>
+            <nav id="mainnav">
+
+                <ul>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="work.html">work</a></li>
+                    <li class="selected"><a href="news.html">news</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li class="search">
+                    <span class="icon">
+                    <i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="" /></li>
+                </ul>
+            </nav>
+     </div>
+            <div class="toggle-search">
+                    <span class="icon">
+                    <i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="" /></div>
+        </div>  <!-- container end --> 
+    </header>
+            
+    <div id="news-section01" class="sub-section01">
+        <div class="fpage">
+            <div class="fcontainer">
+                <h1>news</h1>
+            </div>
+        </div>
+
+    </div> <!-- end section1 -->
+
+    <div class="content">
+        
+        <article>
+     
+            <div id="news-section02">
+            <div class="container_15">
+                 <div class="row group">
+                    <h2>News, Events, &amp; More</h2>
+                    <h3>February</h3>
+                </div>
+                     <div class="row flex group">
+                        <div class="flex-text-left">
+                            <p class="news-date">NEWS: Feb 12, 15</p>
+                            <h3 class="news-subtitle"><a href="#" class="link">Food Product Design: How design can help kids eat their broccoli</a></h3>
+                        </div>
+
+                        <div class="flex-photo-right">
+                            <div class="news-photo">
+                                <a href="#"><img src="images/news_2culumn_1.jpg" class="scale-with-grid"></a>
+                            </div>
+                        </div>
+                     </div><!-- end of row -->
+                
+                     <div class="row flex group">
+                        <div class="flex-text-right">
+                            <p class="news-date">ANNOUNCEMENT: Feb 4, 15</p>
+                            <h3 class="news-subtitle"><a href="#" class="link">Drinkfinity beverage system launches in Brazil</a></h3>  
+                        </div>
+
+                        <div class="flex-photo-left">
+                            <div class="news_photo left">
+                                <a href="#"><img src="images/news_2culumn_2.jpg" class="scale-with-grid"></a>
+                            </div>
+                        </div>
+                    </div><!-- end of row -->
+
+                    <div class="row flex group">
+                        <div class="flex-text-left">
+                            <p class="news-date">EVENT: Feb 2, 15</p>
+                            <h3 class="news-subtitle"><a href="#" class="link">Gordon Hui to speak at the Internet of Things World conference</a></h3>
+                        </div>
+                        <div class="flex-photo-right">
+                        <a href="#"><img src="images/news_2culumn_3.jpg" class="scale-with-grid"></a>
+                        </div>
+                   
+                    </div><!-- end of row -->
+                
+                    <div class="row flex group">
+                        <div class="flex-text-right">
+                            <p class="news-date">EVENT: Feb 10, 15</p>
+                            <h3 class="news-subtitle"><a href="#" class="link">Carla Diana to speak at Cooper Hewitt robotics event</a></h3>                
+                        </div>
+                        
+                        <div class="flex-photo-left">   
+                            <a href="#"><img src="images/news_2culumn_4.jpg" class="scale-with-grid"></a>
+                        </div>  
+                    </div><!-- end of row -->
+                
+            </div> <!-- container end --> 
+            </div> <!-- end section1 -->
+
+        </article> <!-- end content -->
+    </div>
+               
+    <footer class="sub">
+    
+            <ul class="fa-ul group">
+              <li><a href="#"><i class="fa-li fa fa-facebook-square fa-2x"></i><span>Facebook</span></a></li>
+              <li><a href="#"><i class="fa-li fa fa-instagram fa-2x"></i><span>Instagram</span></a></li>
+              <li><a href="#"><i class="fa-li fa fa-twitter-square fa-2x"></i><span>Twitter</span></a></li>
+              <li><a href="#"><i class="fa-li fa fa-vimeo-square fa-2x"></i><span>Vimeo</span></a></li>
+            </ul>
+            <p class="cop">&copy; Prime Studio 2015 All Rights Reserved.</p>
+      
+    </footer>
+<!-- js script-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+    // responsive menu 
+    $(".menu-collapsed").click(function() {
+        $(this).toggleClass("menu-expanded");
+});
+
+// SCROLLTOP 
+                
+        
+        $(window).scroll(function() {
+            
+            if( $(this).scrollTop() > 500 ) {
+                $('header').addClass('fixed');
+            } else {
+                $('header').removeClass('fixed');
+            }
+            
+        });
+    
+    });
+    
+
+    </script>
+
+
+
+</body></html>

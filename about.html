@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Prime Studio</title>
+
+    <!-- GOOGLE SHIV -->
+    <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>
+    <![endif]-->
+
+    <!-- VIEWPORT FOR MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font-awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <!-- google webfont -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,700,900|Merriweather:400,300,700italic' rel='stylesheet' type='text/css'>
+    <!-- animated css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- fullpage scrolling -->
+    <link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
+  
+        <!-- MAIN CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+    
+
+<body class="sub">
+
+    <header>
+        <div class="container_15">
+
+            <h1 id="logo"><a href="index.html">Prime Studio</a></h1>
+<div class="menu-collapsed">
+  <div class="bar"></div>
+            <nav id="mainnav">
+                <ul>
+                    <li class="selected"><a href="about.html">about</a></li>
+                    <li><a href="work.html">work</a></li>
+                    <li><a href="news.html">news</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li class="search">
+                    <span class="icon">
+                    <i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="" /></li>
+                </ul>
+            </nav>
+</div>
+            <div class="toggle-search">
+                    <span class="icon">
+                    <i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="" /></div>
+        </div>  <!-- container end --> 
+    </header>
+
+    <div id="about-section01" class="sub-section01">
+            <div class="fpage">
+            <div class="fcontainer">
+                <h1>about</h1>
+            </div>  <!-- fpage end --> 
+            </div>  <!-- fcontainer end --> 
+    </div> <!-- end section1 -->
+
+    <div class="content">
+        <article>
+      
+            <div id="about-section02">
+            <div class="container_15">
+                 <div class="row group">
+                      <div class="grid_11 prefix_2">
+                <h2>Philosophy</h2>
+                <h3>We are an integrated creative company that believes in the power of design
+     to tell stories and shape experiences.</h3>
+                     </div>
+                <div class="grid_11 prefix_2">
+                <p>Our process prizes collaboration, research, experimentation, laughter, failure, and discovery. We’ve been practicing these principles from our studios in New York since 2000. While we’re proud of our illustrious history, we’re far more interested in writing the next chapter.</p>
+                     </div>
+                </div><!-- end of row -->
+                
+                <div class="row group">
+                <h2>Capabilities</h2>
+                
+                <div class="grid_3 prefix_3">
+                    <h3>Style Guides</h3>
+                    <h3>Identity Design</h3>
+                </div>   
+                
+                <div class="grid_3">
+                    <h3>Brand Strategy</h3>
+                    <h3>Brand Naming</h3>
+                </div>
+                
+                <div class="grid_3 suffix_3">
+                    <h3>Product Design</h3>
+                    <h3>Product Packaging</h3>
+                </div>
+                </div><!-- end of row -->
+                
+                <div class="gird_7 prefix_4 suffix_4">
+                <h2>Awards</h2>
+                <h3>Art Directors Club (ADC)</h3>
+                <p>Fuel TV Station IDs Distinctive Merit</p>
+                <p>MTV Sunday Stew package Merit</p>
+                <p>VH1 Classic Station IDs Gold</p>
+                <p>Young Guns YG5 - Jonathan Notaro</p>
+                <p>Association of Independent Commercial Producers (AICP)</p>
+                <p>2012 Diesel "Only the Brave" Winner, Experiential</p>
+                <p>8Cannes Lions IAF</p>
+                <h3>AIGA</h3>
+                <p>365: AIGA Annual Design Competition 27</p>
+                <p>CMT Top 20 Countdown Typographic Design</p>
+                <p>365: AIGA Annual Design Competition 25</p>
+                <p>Brand New School Identity Branding and Identity</p>
+                <h3>Design Week Awards</h3>
+                <p>Diesel - “Only The Brave”, Shortlisted, 2012</p>
+                <p>Digital Out of Home Awards</p>
+                <h3>FWA</h3>
+                <p>Site of the Day - The Morris Code, 2009 </p>
+                </div>
+                
+            </div> <!-- container end --> 
+            </div> <!-- end section1 -->
+               
+        <footer class="sub">
+          
+                <ul class="fa-ul group">
+                  <li><a href="#"><i class="fa-li fa fa-facebook-square fa-2x"></i><span>Facebook</span></a></li>
+                  <li><a href="#"><i class="fa-li fa fa-instagram fa-2x"></i><span>Instagram</span></a></li>
+                  <li><a href="#"><i class="fa-li fa fa-twitter-square fa-2x"></i><span>Twitter</span></a></li>
+                  <li><a href="#"><i class="fa-li fa fa-vimeo-square fa-2x"></i><span>Vimeo</span></a></li>
+                </ul>
+                <p>&copy; Prime Studio 2015 All Rights Reserved.</p>
+           
+        </footer>
+
+        </article> <!-- end content -->
+    </div>
+
+<!-- js script-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+    
+        // responsive menu
+        $(".menu-collapsed").click(function() {
+            $(this).toggleClass("menu-expanded");
+        });
+
+        // SCROLLTOP 
+                
+        
+        $(window).scroll(function() {
+            
+            if( $(this).scrollTop() > 500 ) {
+                $('header').addClass('fixed');
+            } else {
+                $('header').removeClass('fixed');
+            }
+            
+        });
+    
+    });
+    
+    
+</script>
+
+
+</body></html>
